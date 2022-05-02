@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: black;
+}
+
+h1 {
+    text-shadow: 2px 2px 10px white;
+}
+
+#saludo {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 10px white;
+}
+
+.bienvenida {
+    grid-area: bienvenida;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+
+}
+
+.header {
+    grid-area: header;
+    height: 80%;
+}
+
+.aside{
+    grid-area: aside;
+    margin: auto
+}
+
+.pedido {
+    grid-area: pedido;
+    display: inline-block;
+    color: white;
+    margin: 10px;
+
+}
+
+.total {
+    grid-area: total;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "bienvenida bienvenida"
+    "aside header"
+    "aside pedido"
+    "aside total";
+    margin: 20px;
+}
+
+img {
+    max-width: 400px;
+}
+
+.card {
+    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "descripcion cantidad precio subtotal";
+    width: auto;
+    margin: 5px;
+    padding:10px;
+    border: 1px solid white;
+    border-radius: 15px; 
+    text-align: left;
+    background: linear-gradient(0deg,#000,#262626);
+}
+
+p {
+    width: 18em;
+    text-align: left;
+    margin: auto;
+}
+
+h5{
+    text-align:right;
+    color: red;
+}
+
+h2 {
+    position: relative;
+    margin: 5px;
+    padding:10px;
+    border: 1px solid white;
+    border-radius: 15px; 
+    width: auto;
+    text-align: center;
+    color: red;
+    background: linear-gradient(0deg,#000,#262626);
+}
+
+
+
+@media (max-width: 1200px) {
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+        "bienvenida"
+        "header"
+        "aside" 
+        "pedido"
+        " total";
+    }
+
+    .card {
+        display: inline-block;    
+        width: 95%;
+        border: 1px solid white;
+        border-radius: 15px; 
+        text-align: left;
+        margin: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        margin: 5px;
+        width: 18em;
+        text-align: left;
+    }
+    
+    h5{
+        font-size:20px;
+        text-align:right;
+        color: red;
+    }
+    
+    h2 {
+        display: block;
+        font-size: 20px;
+        margin: 5px;
+        padding:10px;
+        border: 1px solid white;
+        border-radius: 15px; 
+        width: 350px;
+        text-align: center;
+        color: red;
+    }
+    
+
+}
