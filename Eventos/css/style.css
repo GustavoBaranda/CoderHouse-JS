@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background: black;
+}
+
+h1 {
+    text-shadow: 2px 2px 10px white;
+}
+
+#saludo {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 10px white;
+}
+
+.bienvenida {
+    grid-area: bienvenida;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+
+}
+
+.header {
+    grid-area: header;
+    height: 80%;
+}
+
+.aside{
+    grid-area: aside;
+    margin: auto
+}
+
+.resultado {
+    grid-area: resultado;
+    display: inline-block;
+    color: white;
+    margin: 10px;
+
+}
+
+.total {
+    grid-area: total;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "bienvenida bienvenida"
+    "aside header"
+    "aside resultado"
+    "aside resultado";
+    margin: 20px;
+}
+
+img {
+    max-width: 400px;
+}
+
+.card {
+    font-size: 20px;
+    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "codigo descripcion precio ";
+    max-width: 100%;
+    margin: 20px;
+    padding:10px;
+    border: 1px solid white;
+    border-radius: 15px; 
+    text-align: left;
+    background: linear-gradient(0deg,#000,#262626);
+}
+
+.formulario {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    margin: 5px;
+    padding:10px;
+    border: 1px solid white;
+    border-radius: 15px; 
+    background: linear-gradient(0deg,#000,#262626);
+}
+
+.boton {
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    background: linear-gradient(0deg,#000,#262626);
+}
+  
+.noEncontrado {
+    width: 100%;
+    font-size: 3rem;
+
+}
+
+p {
+    width: 18em;
+    text-align: left;
+    margin: auto;
+    font-weight: bold;
+}
+
+.precio {
+    text-align: right;
+    color: red;
+}
+
+@media (max-width: 1200px) {
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+        "bienvenida"
+        "aside"
+        "header"
+        "resultado"
+        "total";
+    }
+
+    .card {
+        display: inline-block;    
+        width: 95%;
+        border: 1px solid white;
+        border-radius: 15px; 
+        text-align: left;
+        margin: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        margin: 5px;
+        width: 18em;
+        text-align: left;
+    }
+
+    .precio {
+        text-align: right;
+        color: red;
+    }
+}

@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #000;
+    height: 100vh;
+    color: white;
+}
+
+.capa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,1);
+    z-index: -1;
+    top: 0;left: 0;
+}
+
+.navBar{
+    background-color: #000;
+    display: inline-block;
+    padding:10px;
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 1;
+}
+
+.container{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+
+.container .btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.logo{
+    padding: 10px;
+    color: #fff;
+    font-weight: 400px;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.imgLogo{
+    width: 100px;
+}
+
+.container {
+    float: right;
+    line-height: 100px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+.comprar {
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: red;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container-menu{
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+}
+
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu{
+    width: 100%;
+    max-width: 480px;
+    background: #000;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+
+.cont-menu nav{
+    transform: translateY(15%);
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.close {
+    background-color: red;
+    border-radius: 40%;
+}
+
+h1 {
+    text-shadow: 2px 2px 10px white;
+}
+
+h3{
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 100%;
+    opacity: 0.9;
+    background-color: #000090;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+
+.carrito{
+    margin: auto;
+    text-align: center;
+}
+
+.bienvenida {
+    margin-left: 50px;
+    text-align: lef;
+    color: white;
+    font-size: 50px;
+
+}
+.resultado {
+    grid-area: resultado;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin: 10px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "resultado resultado";
+    margin: auto;
+}
+
+.img-carrito {
+    width: 25px;
+}
+
+.productos {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 90%;
+	max-width: 1400px;
+	margin: auto;
+} 
+
+.boton-eliminar {
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    background-color: red;
+    text-align: center;
+    font-size: 10px;
+    
+}
+
+.vaciar{
+    color: red;
+}
+
+.tarjetas {
+    color: #fff;
+    width: 100%;
+    margin: 50px;
+    border-radius: 6px;
+    transition: all 400ms ease;
+}
+  
+  .tarjetas:hover {
+    transform: translateY(-3%);
+}
+ 
+.boton {
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    background-color: #000090;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+  
+.boton:hover{
+    opacity: 1;
+    transition: .2s;
+}
+
+.precio, h2 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;;
+}
+
+.precioProducto {
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;;
+}
+
+td {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: gainsboro;
+    padding: 3px 5px;
+}
+
+.nombreProducto {
+    text-align: left;
+}
+
+.botones {
+    margin:0 110px;
+}
+.botonVaciar {
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    background-color: red;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.botonComprar {
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    background-color: green;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+
