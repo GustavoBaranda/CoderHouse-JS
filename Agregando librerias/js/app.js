@@ -29,8 +29,6 @@ const contadorCarrito = document.getElementById('contCarrito')
 
 const vaciar = document.getElementById('vaciar')
 
-//let productoAgregado = document.querySelector('.productoAgregado');
-
 let carrito = []
 
 document.addEventListener('DOMContentLoaded', () => {
