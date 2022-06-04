@@ -113,7 +113,7 @@ const eliminarDelCarrito = (menuId) => {
 
 //Mostrar y agregar items dentro del carrito y actulizacion de localStorage 
 const actualizarCarrito = () => {
-  contenedorCarrito.innerHTML =""; 
+  contenedorCarrito.innerHTML +=""; 
   
   carrito.forEach((menu) => {
     const etiqueta = document.createElement('tr');
@@ -158,7 +158,7 @@ finalizarCompra.addEventListener('click', () => {
   }else{
   //Agrego libreria sweetalert2 para mensaje de carrito vacio
   Swal.fire({
-  title: 'Carrito vacio',
+  title: 'El carrito esta vacio',
   background: '#000',
   color: '#fff',
   });
