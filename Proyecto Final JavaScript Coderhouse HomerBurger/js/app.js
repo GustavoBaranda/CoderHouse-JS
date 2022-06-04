@@ -146,8 +146,8 @@ finalizarCompra.addEventListener('click', () => {
   precioTotal.innerText = 0;
   //Agrego libreria sweetalert2 para mensaje de finalizar compra
   Swal.fire({
-    title: 'Muchas gracias por la compra!!',
-    text: 'El pedido llegara en aproximadamente 30 minutos',
+    title: 'Muchas gracias por tu compra!!',
+    text: 'Gracias por elegir HomerBurger!!',
     imageUrl: './img/homero.png',
     imageWidth: 200,
     imageHeight: 200,
